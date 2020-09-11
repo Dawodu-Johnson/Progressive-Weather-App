@@ -1,0 +1,170 @@
+/*html{
+    
+    width:100%;
+}
+*/
+
+body { 
+
+    max-height:100vh;
+    max-width: 100%;
+    font-family: 'calibri', 'Arial', 'Helvetica';
+    background-color: rgba(0,0,0,0.5);
+    background: url('../Img/80a9750d105c49b56beaaa84a6ff2667.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#alert{
+    display:block;
+    width:35%;
+    color:white;
+    text-shadow: 4px 4px 10px red;
+    font-size:1.4rem;
+    margin-left:5px;
+    margin:0 auto 0;
+    padding:.3em;
+}
+#videoTag{
+   /* position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 100vh;
+    z-index: -1;
+    min-width: 100%;*/
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  z-index:-1;
+  min-height: 100%;
+}
+
+
+
+h1{
+    text-shadow: 6px 6px 10px black;
+    padding-top:.8em;
+    text-align:center;
+    color:white;
+    margin-bottom:3em;
+}
+input{
+    border-radius:5px;
+}
+input[type="search"]{
+    display:block;
+    border:none;
+    min-width:90%;
+    margin:0 auto 2.5em;
+    font-size:1.5em;
+    text-align:center;
+}
+input:focus{
+    border: 1px solid rgba(0,0,255,.5);
+}
+#button{  
+display:block;
+ background-color:rgba(0,0,255,.5);
+ font-size: 1.5rem;
+ color:white;
+ width:35%;
+ border-radius:10px;
+ margin-left:5px;
+ margin:0 auto 0;
+padding:.3em;
+}
+#button:visited{
+    background-color:rgba(128,0,128,.1)
+}
+#button:hover{
+    background-color:rgba(128,0,128,.4)
+}
+
+label{
+    text-align:center;
+    padding:0 0 .8em .5em;
+    display:block;
+    margin: auto;
+    font-size:1.9rem;
+    color:white;
+}
+.data{
+    visibility:hidden;
+    background: rgba(0,0,225,0.5);
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius:20px;
+    display:block;
+    width:38%;
+  /* width: 30%;
+    */
+    list-style-type:none;
+    margin:0 auto 0;
+    
+
+}
+li{
+    text-transform:capitalize;
+    font-size:1.5rem;
+    color:white;
+    list-style-type:none;
+    text-shadow:4px 4px 5px black;
+}
+#left{
+float:left;
+/*padding:1em 1em 1em 1em;*/
+text-align:right;
+}
+#right{
+text-align:left;
+float:right;
+/*padding:1em 1em 1em 0;
+*/
+}
+#floated-items{
+    /*background:#343434;*/
+    display:table;
+    content:"";
+    clear:both;
+    margin-top:4em;
+    width:100%;
+   
+}
+#install-app
+{
+    color:black;
+    background-color:white;
+    border-radius:5px;
+}
+
+@media (max-width: 417px)
+{
+.data{
+   
+    width:20%;
+    background:none;
+    border:none;
+    text-align:left;
+    box-shadow: none;
+}
+#left{
+    text-align:left;
+}
+#right{
+    text-align:center;
+   width:32%;
+}
+li{
+    font-size:1.1rem;
+}
+#floated-items{
+    margin-top: 1.23em;
+}
+
+}

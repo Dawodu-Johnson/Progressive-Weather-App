@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Weather App using open weather API">
+  <title>Weather App</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="Styles/normalize.min.css">
+  <link rel="stylesheet" href="Styles/main.css">
+</head>
+
+<body>
+  
+ <h1>Weather App</h1>
+  <label for="search">Search for a city</label>
+  <input type="search" name="search" id="search"  placeholder="City name" >
+  <span id="alert"></span>
+  <button id="button">Check</button>
+  <video id="videoTag" autoplay  muted loop>
+    <source id="srcMp4" src='' type='video/mp4'>
+  </video>
+  <div id="floated-items">
+  <ul class="data" id="left">
+    <li id="country">Country</li>
+    <li >weather </li>
+    <li >Pressure</li>
+    <li > Temperature</li>
+    <li > Windspeed</li>
+    </ul>
+    <ul class="data" id="right">
+      <li class="list" id="city">City</li>
+      <li class="list" id="cloud">wea</li>
+      <li  class="list" id="pressure">Pre</li>
+      <li class="list"id="temp">Temp</li>
+      <li  class="list" id="wind">Wind S</li>
+    </ul>
+</div>
+   <!---- <footer><button id="install-app">Install app here</button></footer>-->
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="service-worker.js"></script>
+</body>
+
+</html>
